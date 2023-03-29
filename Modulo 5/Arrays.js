@@ -67,7 +67,7 @@
 //}
 
 
-function diaDeLaSemana(numeroDeDia) {
+//function diaDeLaSemana(numeroDeDia) {
     // Supongamos que los días de la semana se codifican como 1 = Domingo, 2 = Lunes y así sucesivamente.
     // Realiza una función que, dado el número del día de la semana, retorne: "Es fin de semana"
     // si el día corresponde a "Sábado" o "Domingo", y "Es dia laboral" en caso contrario.
@@ -90,14 +90,29 @@ function diaDeLaSemana(numeroDeDia) {
 //        return true;
 //    }else{
 //        return false;
-    }
+    //}
     
 //}
 // console.log(empiezaConNueve(654));
-
+array = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Noviembre" ];
 function mesesDelAño(array) {
     // El arreglo contiene algunos meses del año desordenados. Debes recorrerlo, buscar los meses "Enero",
     // "Marzo" y "Noviembre", guardarlos en un nuevo arreglo y retornarlo.
     // Si alguno de los meses no está, retornar el string: "No se encontraron los meses pedidos".
     // Tu código:
+    
+    var arrayMeses = [];
+    
+   for(var i = 0 ; i < array.length ; i++){
+     if(array [i] === "Enero" || array[i] === "Marzo" || array [i] === "Noviembre"){
+        arrayMeses.push(array[i]);
+     }
+   }
+   if (arrayMeses.length === 3){
+    console.log(arrayMeses);
+   }
+   else{
+    "No se encontraron los meses pedidos"
+   }
 
+}
